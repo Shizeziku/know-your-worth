@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Helvetica Neue", Arial, sans-serif;
+}

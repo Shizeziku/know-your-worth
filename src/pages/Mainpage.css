@@ -1,0 +1,88 @@
+/* Theme Colors */
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --font-color: #ff9900;
+    --hover-glow: rgba(255, 152, 0, 0.6);
+}
+
+/* Page Styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+
+/* Heading */
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--font-color);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Subtitle */
+.financial-status {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    align-self: flex-start;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+/* Card Container */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Card Styling */
+.info-card {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: var(--font-color);
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 60%;
+    height: 140px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Icons */
+.icon {
+    font-size: 30px;
+    margin-right: 15px;
+    color: white; /* White icon color for contrast */
+}
+
+/* Hover Effects */
+.info-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 5px 20px var(--hover-glow);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .info-card {
+        width: 90%;
+        height: auto;
+    }
+}
+
